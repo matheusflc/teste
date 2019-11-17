@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+
+int main(void){
+
+    int palpite, contador=0;
+
+    printf("Bem vindo ao jogo, quem leu eh gayyy\n");
+
+    do{
+        printf("Adivinhe o numero seu otario. . . xD\nDigite o numero: ");
+        scanf("%d", &palpite);
+            if(palpite == 24){
+                printf("Voce ganhou, seu numero eh 24 parabens vc eh gay\n");
+            }else{
+                if(palpite > 24){
+                    printf("Pensando muito alto, provavelmente tem pal pequeno ou senta no mesmo\n");
+                }else{
+                    printf("Muito baixo significa que na sua casa eh tudo igual xD\n");
+
+                }
+
+            }
+        contador++;
+
+    }while(contador < 5 && palpite != 24);
+
+if(contador == 5){
+    printf("Voce ja deu o cu 5 vezes, portando perdeu e tera que mamar !!! ", contador);
+}else{
+    printf("Voce ganhou dando o cu %d vezes ", contador);
+}
+
+
+
+    return 0;
+}
